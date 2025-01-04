@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/capitanFragment">
+
+    <fragment
+        android:id="@+id/capitanFragment"
+        android:name="com.example.navigationcomponent.CapitanFragment"
+        android:label="fragment_capitan"
+        tools:layout="@layout/fragment_capitan" >
+        <action
+            android:id="@+id/action_capitanFragment_to_ironFragment"
+            app:destination="@id/ironFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_capitanFragment_to_spiderFragment"
+            app:destination="@id/spiderFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_capitanFragment_to_hulkFragment"
+            app:destination="@id/hulkFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_capitanFragment_to_venomFragment"
+            app:destination="@id/venomFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/ironFragment"
+        android:name="com.example.navigationcomponent.IronFragment"
+        android:label="fragment_iron"
+        tools:layout="@layout/fragment_iron" >
+        <action
+            android:id="@+id/action_ironFragment_to_capitanFragment"
+            app:destination="@id/capitanFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_ironFragment_to_spiderFragment"
+            app:destination="@id/spiderFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_ironFragment_to_hulkFragment"
+            app:destination="@id/hulkFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_ironFragment_to_venomFragment"
+            app:destination="@id/venomFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/spiderFragment"
+        android:name="com.example.navigationcomponent.SpiderFragment"
+        android:label="fragment_spider"
+        tools:layout="@layout/fragment_spider" >
+        <action
+            android:id="@+id/action_spiderFragment_to_ironFragment"
+            app:destination="@id/ironFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_spiderFragment_to_capitanFragment"
+            app:destination="@id/capitanFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_spiderFragment_to_venomFragment"
+            app:destination="@id/venomFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_spiderFragment_to_hulkFragment"
+            app:destination="@id/hulkFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/hulkFragment"
+        android:name="com.example.navigationcomponent.HulkFragment"
+        android:label="fragment_hulk"
+        tools:layout="@layout/fragment_hulk" >
+        <action
+            android:id="@+id/action_hulkFragment_to_capitanFragment"
+            app:destination="@id/capitanFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_hulkFragment_to_ironFragment"
+            app:destination="@id/ironFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_hulkFragment_to_spiderFragment"
+            app:destination="@id/spiderFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_hulkFragment_to_venomFragment"
+            app:destination="@id/venomFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+    <fragment
+        android:id="@+id/venomFragment"
+        android:name="com.example.navigationcomponent.VenomFragment"
+        android:label="fragment_venom"
+        tools:layout="@layout/fragment_venom" >
+        <action
+            android:id="@+id/action_venomFragment_to_capitanFragment"
+            app:destination="@id/capitanFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_venomFragment_to_ironFragment"
+            app:destination="@id/ironFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_venomFragment_to_spiderFragment"
+            app:destination="@id/spiderFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+        <action
+            android:id="@+id/action_venomFragment_to_hulkFragment"
+            app:destination="@id/hulkFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="false" />
+    </fragment>
+</navigation>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HulkFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgHulk"
+            android:layout_width="0dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@tools:sample/avatars" />
+
+        <Button
+            android:id="@+id/btnCapitanFragmentForHulk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="180dp"
+            android:text="Change Capitan America"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgHulk" />
+
+        <Button
+            android:id="@+id/btnSpiderManForHulk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="Change Spider man"
+            app:layout_constraintBottom_toBottomOf="@+id/btnCapitanFragmentForHulk"
+            app:layout_constraintStart_toEndOf="@+id/btnCapitanFragmentForHulk"
+            app:layout_constraintTop_toTopOf="@+id/btnCapitanFragmentForHulk" />
+
+        <Button
+            android:id="@+id/btnIronManFragmentForHulk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Change Iron man"
+            app:layout_constraintEnd_toEndOf="@+id/btnCapitanFragmentForHulk"
+            app:layout_constraintStart_toStartOf="@+id/btnCapitanFragmentForHulk"
+            app:layout_constraintTop_toBottomOf="@+id/btnCapitanFragmentForHulk" />
+
+        <Button
+            android:id="@+id/btnVenomFragmentForHulk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Venom"
+            app:layout_constraintBottom_toBottomOf="@+id/btnIronManFragmentForHulk"
+            app:layout_constraintEnd_toEndOf="@+id/btnSpiderManForHulk"
+            app:layout_constraintStart_toStartOf="@+id/btnSpiderManForHulk"
+            app:layout_constraintTop_toTopOf="@+id/btnIronManFragmentForHulk" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
